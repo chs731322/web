@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+    <style>
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            background-image: url(/Step08/img/radio_none_check.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+        }
+        input:checked + label {
+            background-image: url(/Step08/img/radio_check.png);
+            background-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="radio" name="radio" id="rd1" value="r1"><label for="rd1">항목1</label>
+    <br>
+    <input type="radio" name="radio" id="rd2" value="r2"><label for="rd2">항목2</label>
+</body>
+</html>

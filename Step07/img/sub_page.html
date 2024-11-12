@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header_container {
+            background-color: #e9e9e9;
+            padding: 5px;
+        }
+
+        header {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: #e9e9e9;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu {
+            display: flex;
+            flex-flow: row nowrap;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+        ul.menu>li {
+            display: inline-block;
+            width: 200px;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        main {
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        section>img {
+            width: 70%;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            height: 320px;
+            padding: 20px 0px;
+            background-color: #fafafa;
+            gap: 15px;
+        }
+
+        footer {
+            height: 200px;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0px;
+            background-color: #e9e9e9;
+        }
+
+        .footer_info {
+            list-style-type: none;
+        }
+
+        .footer_info>li {
+            padding: 5px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <p>○○○님이 로그인 하셨습니다.</p>
+            <div class="log">
+                <a href="">로그아웃</a>
+                <span>|</span>
+                <a href="">정보수정</a>
+            </div>
+        </div>
+        <img src="/Step07/img/main_4.jpg" alt="">
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">예약</a></li>
+            <li><a href="#">펜션 스토리</a></li>
+            <li><a href="#">펜션 소개</a></li>
+            <li><a href="#">오시는 길</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section>
+                <img src="/Step07/img/map.png" alt="">
+                <div class="way">
+                    <h2>오시는 길</h2>
+                    <p>이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다. 국가는 청원에 대하여 심사할 의무를 진다.언론·출판이 타인의 명예나 권리를 침해한
+                        때에는 피해자는 이에 대한 피해의 배상을 청구할 수 있다.
+                        대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을
+                        위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <footer>
+        <ul class="footer_info">
+            <li>○○○○ 펜션</li>
+            <li>대표자 : ○○○○</li>
+            <li>연락처 : <a href="">010-0000-0000</a></li>
+            <li>주소 : 강원도 평창시 ○○○○○○○○</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

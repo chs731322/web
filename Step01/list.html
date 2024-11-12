@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 태그</title>
+</head>
+<body>
+    <h3>순번이 없는 목록 태그</h3>
+    <ul> <!-- 목록 영역 -->
+        <li>순번이 없는 목록 태그 항목 - 1</li>
+        <li>순번이 없는 목록 태그 항목 - 2</li>
+        <li>순번이 없는 목록 태그 항목 - 3</li>
+        <li>순번이 없는 목록 태그 항목 - 4</li>
+    </ul>
+    <hr>
+    <h3>순번이 있는 목록 태그</h3>
+    <ol start="6" reversed> <!-- 6번부터 시작 6, 5, 4, 3 ... -->
+        <li>순번이 있는 목록 태그 항목 - 1</li>
+        <li>순번이 있는 목록 태그 항목 - 2</li>
+        <li>순번이 있는 목록 태그 항목 - 3</li>
+        <li>순번이 있는 목록 태그 항목 - 4</li>
+    </ol>
+    <hr>
+    <h3>목록 안의 목록 태그</h3>
+    <ul>
+        <li>메인 항목</li>
+        <li>메인 항목</li>
+        <ol>
+            <li>서브 항목</li>
+            <li>서브 항목</li>
+            <li>서브 항목</li>
+            <ol>
+                <li>서서브</li>
+            </ol>
+        </ol>
+        <li>메인 항목</li>
+        <ul>
+            <li>서브 항목</li>
+            <li>서브 항목</li>
+            <ul>
+                <li>서서브 항목</li>
+                <li>서서브 항목</li>
+            </ul>
+        </ul>
+    </ul>
+    <hr>
+    <dl>
+        <dt>설명에 해당하는 제목을 작성하는 영역</dt>
+        <dd>설명</dd>
+        <dd>설명</dd>
+        <dd>설명</dd>
+        <dt>두번째 설명 제목</dt>
+        <dd>설명</dd>
+        <dd>설명</dd>
+        <dd>설명</dd>
+    </dl>
+</body>
+</html>

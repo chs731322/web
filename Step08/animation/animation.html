@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(182, 104, 255);
+        }
+
+        @keyframes ani1 {
+            from {
+                border-radius: 0px;
+            }
+
+            to {
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                left: 0px;
+            }
+
+            50% {
+                background-color: rgb(255, 253, 123);
+            }
+
+            100% {
+                left: calc(100% - 200px);
+                border-radius: 100px;
+            }
+        }
+
+        .box {
+            animation-name: ani1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+
+        .mbox {
+            position: relative;
+            animation: ani2 2s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <hr>
+    <div class="mbox"></div>
+</body>
+
+</html>

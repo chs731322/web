@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .sns_bar {
+            display: flex;
+            flex-flow: row nowrap;
+            list-style-type: none;
+            gap: 20px;
+        }
+
+        .sns_bar a:link, a:visited{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-image: url(/resource/img/sns_icon_pack.png);
+            background-color: none;
+            background-repeat: no-repeat;
+        }
+
+        .fb {
+            background-position: 0px 0px;
+        }
+
+        .gg {
+            background-position: 0px -48px;
+        }
+
+        .yt {
+            background-position: 0px -96px;
+        }
+
+        .kt {
+            background-position: 0px -144px;
+        }
+
+        .tw {
+            background-position: 0px -192px;
+        }
+
+        .ins {
+            background-position: 0px -240px;
+        }
+
+
+        .fb:link:hover {
+            background-position: -48px -0px;
+        }
+
+        .gg:link:hover {
+            background-position: -48px -48px;
+        }
+
+        .yt:link:hover {
+            background-position: -48px -96px;
+        }
+
+        .kt:link:hover {
+            background-position: -48px -144px;
+        }
+
+        .tw:link:hover {
+            background-position: -48px -192px;
+        }
+
+        .ins:link:hover {
+            background-position: -48px -240px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="sns_bar">
+        <li><a href="" class="fb"></a></li>
+        <li><a href="" class="gg"></a></li>
+        <li><a href="" class="yt"></a></li>
+        <li><a href="" class="kt"></a></li>
+        <li><a href="" class="tw"></a></li>
+        <li><a href="" class="ins"></a></li>
+    </ul>
+</body>
+
+</html>

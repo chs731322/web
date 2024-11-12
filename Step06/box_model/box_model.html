@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스 모델</title>
+  <style>
+    div{
+      width: 300px;
+      height: 300px;
+      border: 20px solid black;
+      padding: 50px;
+      margin: 50px;
+    }
+   
+    .box1{
+      /* 테두리 + padding + 내용 = 300px */
+      /* 가로 세로 길이를 줄 때 어느 영역까지를 width 길이로 설정할 지
+      width 길이 값 = 테두리 두께 + padding 두께 + 컨텐츠 영역 */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">안녕하세요</div>
+  <hr>
+  <div class="box2"></div>
+</body>
+</html>
